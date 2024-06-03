@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_medio">
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="314dp"
+        android:layout_height="614dp"
+        android:background="@color/azul_claro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_cif"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:hint="@string/cif"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textColorHint="#8D375D80"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/et_sector_empresa"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="@+id/view4" />
+
+    <EditText
+        android:id="@+id/et_nombre_empresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:hint="@string/nombre_empresa"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textColorHint="#8D375D80"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/et_cif" />
+
+    <EditText
+        android:id="@+id/et_direccion_empresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:hint="@string/direccion_empresa"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textColorHint="#8D375D80"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/et_nombre_empresa" />
+
+    <EditText
+        android:id="@+id/et_telefono_empresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:hint="@string/telefono"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textColorHint="#8D375D80"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/et_direccion_empresa" />
+
+    <EditText
+        android:id="@+id/et_correo_empresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:hint="@string/correo"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textColorHint="#8D375D80"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/et_telefono_empresa" />
+
+    <EditText
+        android:id="@+id/et_sector_empresa"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:hint="@string/sector"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textColorHint="#8D375D80"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="0.835"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/et_url_empresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:hint="@string/url_empresa"
+        android:inputType="textUri"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textColorHint="#8D375D80"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/et_correo_empresa" />
+
+    <EditText
+        android:id="@+id/et_url_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:hint="@string/url_logo"
+        android:inputType="textUri"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textColorHint="#8D375D80"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/et_url_empresa" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:text="@string/titulo_registro_empresa"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+    <Button
+        android:id="@+id/bt_registrar_empresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:text="@string/registrar"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/et_url_logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

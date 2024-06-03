@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_medio">
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="316dp"
+        android:layout_height="594dp"
+        android:background="@color/azul_claro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_nombre_empleado"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/view8"
+        app:layout_constraintTop_toTopOf="@+id/view8"
+        tools:text="Antonio Martínez" />
+
+    <TextView
+        android:id="@+id/tv_dni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintHorizontal_bias="0.261"
+        app:layout_constraintStart_toStartOf="@+id/view8"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nombre_empleado"
+        tools:text="12345678A" />
+
+    <TextView
+        android:id="@+id/tv_puesto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintStart_toStartOf="@+id/view8"
+        app:layout_constraintTop_toBottomOf="@+id/tv_empresa_empleado"
+        tools:text="Contable" />
+
+    <TextView
+        android:id="@+id/tv_fecha_nacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_dni"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="@+id/view8"
+        tools:text="27/06/1986" />
+
+    <TextView
+        android:id="@+id/tv_direccion_empleado"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintHorizontal_bias="0.298"
+        app:layout_constraintStart_toStartOf="@+id/view8"
+        app:layout_constraintTop_toBottomOf="@+id/tv_puesto"
+        tools:text="Avenida Juan XXIII 63, Alicante" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview8"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="27dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_direccion_empleado"
+        app:layout_constraintTop_toBottomOf="@+id/tv_puesto">
+
+        <ImageButton
+            android:id="@+id/bt_gmaps_empleado"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@color/azul_oscuro"
+            android:contentDescription="@string/abrir_maps"
+            app:layout_constraintEnd_toEndOf="@+id/view8"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:srcCompat="@drawable/google_maps" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_telefono_empleado"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="@+id/view8"
+        app:layout_constraintTop_toBottomOf="@+id/cardview8"
+        tools:text="654789123" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="23dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_telefono_empleado"
+        app:layout_constraintTop_toBottomOf="@+id/cardview8">
+
+        <ImageButton
+            android:id="@+id/bt_llamar_empleado"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@color/azul_oscuro"
+            android:contentDescription="@string/llamar"
+            app:layout_constraintEnd_toEndOf="@+id/view8"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:srcCompat="@drawable/telefono" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_correo_empleado"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintHorizontal_bias="0.289"
+        app:layout_constraintStart_toStartOf="@+id/view8"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6"
+        tools:text="antonio@mercadona.es" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView7"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="23dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_correo_empleado"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6">
+
+        <ImageButton
+            android:id="@+id/bt_mandar_correo_empleado"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@color/azul_oscuro"
+            android:contentDescription="@string/mandar_email"
+            app:layout_constraintEnd_toEndOf="@+id/view8"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:srcCompat="@drawable/email" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_empresa_empleado"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintStart_toStartOf="@+id/view8"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dni"
+        tools:text="Mercadona S.A." />
+
+    <Button
+        android:id="@+id/bt_editar_empleado"
+        android:layout_width="112dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:text="@string/editar"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bt_borrar_empleado"
+        app:layout_constraintStart_toStartOf="@+id/view8" />
+
+    <Button
+        android:id="@+id/bt_borrar_empleado"
+        android:layout_width="112dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:text="@string/borrar"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintTop_toBottomOf="@+id/bt_mostrar_empresa" />
+
+    <Button
+        android:id="@+id/bt_mostrar_empresa"
+        android:layout_width="250dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:text="@string/ver_empresa"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="@+id/view8"
+        app:layout_constraintTop_toBottomOf="@+id/cardView7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9BB6CE"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="360dp"
+        android:layout_height="352dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="296dp"
+        android:layout_height="285dp"
+        android:background="#BACFE2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.733" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:hint="@string/correo"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="#375D80"
+        android:textColorHint="#8D375D80"
+        android:textColorLink="#375D80"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.169" />
+
+    <EditText
+        android:id="@+id/et_contra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:hint="@string/contrasenya"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="#375D80"
+        android:textColorHint="#8D375D80"
+        android:textColorLink="#375D80"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/et_email"
+        app:layout_constraintVertical_bias="0.134" />
+
+    <Button
+        android:id="@+id/bt_acceder"
+        android:layout_width="168dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#375D80"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:text="@string/acceder"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/et_contra"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="175dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:text="@string/texto"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.338"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/bt_acceder" />
+
+    <TextView
+        android:id="@+id/tv_aqui"
+        android:layout_width="38dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:text="@string/aqui"
+        android:textAlignment="viewStart"
+        android:textColor="#375D7F"
+        android:textColorHighlight="#375D7F"
+        android:textColorHint="#375D7F"
+        android:textColorLink="#375D7F"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.837"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/bt_acceder" />
+
+    <TextView
+        android:id="@+id/tv_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:text="@string/copyright"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

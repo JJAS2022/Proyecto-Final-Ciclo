@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_medio">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="570dp"
+        android:layout_height="320dp"
+        android:background="#B9CEE1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:text="@string/perfil_titulo"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <EditText
+        android:id="@+id/et_nombre_perfil"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:hint="@string/nombre"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#375D7F"
+        android:textColorHint="#8D375D80"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email_perfil" />
+
+    <EditText
+        android:id="@+id/et_apellido_perfil"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:hint="@string/apellido"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#375D7F"
+        android:textColorHint="#8D375D80"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/et_nombre_perfil" />
+
+    <EditText
+        android:id="@+id/et_pass_perfil"
+        android:layout_width="160dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:hint="@string/contrasenya"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="#375D80"
+        android:textColorHint="#8D375D80"
+        android:textColorLink="#375D80"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.758"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup1" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email_perfil">
+
+        <RadioButton
+            android:id="@+id/rbHombre_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cormorant_garamond_medium"
+            android:text="@string/hombre"
+            android:textColor="#375D7F"
+            android:textSize="@dimen/letter_size"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbMujer_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cormorant_garamond_medium"
+            android:text="@string/mujer"
+            android:textColor="#375D7F"
+            android:textSize="@dimen/letter_size"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp"
+        app:layout_constraintStart_toEndOf="@+id/et_nombre_perfil"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email_perfil">
+
+        <ImageButton
+            android:id="@+id/bt_actualizar_nombre"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@color/azul_oscuro"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toEndOf="@+id/et_nombre_perfil"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:srcCompat="@drawable/actualizar" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="45dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp"
+        app:layout_constraintStart_toEndOf="@+id/et_apellido_perfil"
+        app:layout_constraintTop_toBottomOf="@+id/et_nombre_perfil">
+
+        <ImageButton
+            android:id="@+id/bt_actualizar_apellido"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@color/azul_oscuro"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toEndOf="@+id/et_apellido_perfil"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:srcCompat="@drawable/actualizar" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email_perfil">
+
+        <ImageButton
+            android:id="@+id/bt_actualizar_genero"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@color/azul_oscuro"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toEndOf="@+id/et_apellido_perfil"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:srcCompat="@drawable/actualizar" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="45dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toEndOf="@+id/et_pass_perfil"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup1">
+
+        <ImageButton
+            android:id="@+id/bt_actualizar_contra"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@color/azul_oscuro"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toEndOf="@+id/et_pass_perfil"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:srcCompat="@drawable/actualizar" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_email_perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:textAlignment="center"
+        android:textColor="#375D7F"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

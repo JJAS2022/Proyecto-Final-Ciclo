@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_medio">
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="314dp"
+        android:layout_height="614dp"
+        android:background="@color/azul_claro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="225dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/azul_medio"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fecha" />
+
+    <EditText
+        android:id="@+id/et_dni"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:hint="@string/dni"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textColorHint="#8D375D80"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/et_puesto"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="@+id/view7" />
+
+    <EditText
+        android:id="@+id/et_nombre_empleado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:hint="@string/nombre"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textColorHint="#8D375D80"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/et_dni" />
+
+    <EditText
+        android:id="@+id/et_direccion_empleado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:hint="@string/direccion"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textColorHint="#8D375D80"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/et_nombre_empleado" />
+
+    <EditText
+        android:id="@+id/et_telefono_empleado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:hint="@string/telefono"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textColorHint="#8D375D80"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/et_direccion_empleado" />
+
+    <EditText
+        android:id="@+id/et_correo_empleado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:hint="@string/correo"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textColorHint="#8D375D80"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/et_telefono_empleado" />
+
+    <EditText
+        android:id="@+id/et_puesto"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:hint="@string/puesto"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textColorHint="#8D375D80"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.835"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo_anyadir_empleado" />
+
+    <TextView
+        android:id="@+id/tv_titulo_anyadir_empleado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:text="@string/titulo_registro_empleado"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toTopOf="@+id/view7" />
+
+    <Button
+        android:id="@+id/bt_registrar_empleado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:text="@string/registrar"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+    <TextView
+        android:id="@+id/tv_fecha"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:text="@string/fecha_nacimiento"
+        android:textAlignment="center"
+        android:textColor="@color/hint"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/et_correo_empleado" />
+
+    <ImageView
+        android:id="@+id/iv_calendario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        android:src="@drawable/calendario"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/et_correo_empleado" />
+
+    <Spinner
+        android:id="@+id/sp_empresas"
+        android:layout_width="225dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:spinnerMode="dialog"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fecha" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

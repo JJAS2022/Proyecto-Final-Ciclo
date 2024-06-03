@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_medio">
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="314dp"
+        android:layout_height="594dp"
+        android:background="@color/azul_claro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="107dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toTopOf="@+id/view5"
+        app:srcCompat="@drawable/ver_empresas"
+        android:contentDescription="@string/logo_empresa"/>
+
+    <TextView
+        android:id="@+id/tv_razon_social"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo"
+        tools:text="Mercadona" />
+
+    <TextView
+        android:id="@+id/tv_cif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintStart_toEndOf="@+id/iv_logo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sector"
+        tools:text="A12345678" />
+
+    <TextView
+        android:id="@+id/tv_sector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintStart_toEndOf="@+id/iv_logo"
+        app:layout_constraintTop_toTopOf="@+id/view5"
+        tools:text="Alimentación" />
+
+    <TextView
+        android:id="@+id/tv_domicilio_social"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintHorizontal_bias="0.289"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_razon_social"
+        tools:text="Avenida de las Naciones 45, Valencia" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="27dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_domicilio_social"
+        app:layout_constraintTop_toBottomOf="@+id/tv_razon_social">
+
+        <ImageButton
+            android:id="@+id/bt_gmaps_empresa"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@color/azul_oscuro"
+            android:contentDescription="@string/abrir_maps"
+            app:layout_constraintEnd_toEndOf="@+id/view5"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:srcCompat="@drawable/google_maps" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_telefono_comercial"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5"
+        tools:text="965874962" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_telefono_comercial"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+        <ImageButton
+            android:id="@+id/bt_llamar_empresa"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@color/azul_oscuro"
+            android:contentDescription="@string/llamar"
+            app:layout_constraintEnd_toEndOf="@+id/view5"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:srcCompat="@drawable/telefono" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_correo_empresa"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintHorizontal_bias="0.289"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6"
+        tools:text="info@mercadona.es" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView7"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_correo_empresa"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6">
+
+        <ImageButton
+            android:id="@+id/bt_mandar_correo_empresa"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@color/azul_oscuro"
+            android:contentDescription="@string/mandar_email"
+            app:layout_constraintEnd_toEndOf="@+id/view5"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:srcCompat="@drawable/email" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_web_empresa"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:textAlignment="center"
+        android:textColor="@color/azul_oscuro"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintHorizontal_bias="0.289"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/cardView7"
+        tools:text="www.mercadona.es" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView8"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_web_empresa"
+        app:layout_constraintTop_toBottomOf="@+id/cardView7">
+
+        <ImageButton
+            android:id="@+id/bt_ver_url"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@color/azul_oscuro"
+            android:contentDescription="@string/ver_web"
+            app:layout_constraintEnd_toEndOf="@+id/view5"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:srcCompat="@drawable/web" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/bt_editar"
+        android:layout_width="112dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:text="@string/editar"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bt_borrar"
+        app:layout_constraintStart_toStartOf="@+id/view5" />
+
+    <Button
+        android:id="@+id/bt_borrar"
+        android:layout_width="112dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:text="@string/borrar"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/bt_mostrar_empleados" />
+
+    <Button
+        android:id="@+id/bt_mostrar_empleados"
+        android:layout_width="250dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:text="@string/ver_empleados"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/cardView8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

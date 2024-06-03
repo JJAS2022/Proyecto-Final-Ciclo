@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9BB6CE"
+    tools:context=".AnyadirUsuario">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="639dp"
+        android:layout_height="272dp"
+        android:background="#BACFE2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.484" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:hint="@string/correo"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="#375D80"
+        android:textColorHint="#8D375D80"
+        android:textColorLink="#375D80"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/et_nombre" />
+
+
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:hint="@string/contrasenya"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="#375D80"
+        android:textColorHint="#8D375D80"
+        android:textColorLink="#375D80"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/et_nombre" />
+
+    <Button
+        android:id="@+id/bt_registro"
+        android:layout_width="168dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#375D80"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:text="@string/registrar"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/et_pass" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="304dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:text="@string/titulo_registro_land"
+        android:textAlignment="center"
+        android:textColor="#375D7F"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <EditText
+        android:id="@+id/et_nombre"
+        android:layout_width="177dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:hint="@string/nombre"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#375D80"
+        android:textColorHint="#8D375D80"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/et_apellido"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="@+id/view" />
+
+    <EditText
+        android:id="@+id/et_apellido"
+        android:layout_width="177dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/cormorant_garamond_medium"
+        android:hint="@string/apellido"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#375D80"
+        android:textColorHint="#8D375D80"
+        android:textSize="@dimen/letter_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toEndOf="@+id/et_apellido"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <RadioButton
+            android:id="@+id/rbHombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cormorant_garamond_medium"
+            android:text="@string/hombre"
+            android:checked="true"
+            android:textAlignment="center"
+            android:textColor="#375D7F"
+            android:textSize="@dimen/letter_size"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbMujer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cormorant_garamond_medium"
+            android:text="@string/mujer"
+            android:textAlignment="center"
+            android:textColor="#375D7F"
+            android:textSize="@dimen/letter_size"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

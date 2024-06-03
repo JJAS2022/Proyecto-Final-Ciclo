@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_individual"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:background="@color/azul_claro">
+
+        <TextView
+            android:id="@+id/tv_item_nombre_empresa"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/cormorant_garamond_medium"
+            android:textAlignment="center"
+            android:textColor="@color/azul_oscuro"
+            android:textSize="@dimen/letter_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_item_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.507"
+            tools:text="Mercadona" />
+
+        <TextView
+            android:id="@+id/tv_item_telefono_empresa"
+            android:layout_width="100dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/cormorant_garamond_medium"
+            android:textAlignment="center"
+            android:textColor="@color/azul_oscuro"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="123456789" />
+
+        <TextView
+            android:id="@+id/tv_item_email_empresa"
+            android:layout_width="100dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/cormorant_garamond_medium"
+            android:textAlignment="center"
+            android:textColor="@color/azul_oscuro"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_telefono_empresa"
+            tools:text="info@mercadona.es" />
+
+        <TextView
+            android:id="@+id/tv_item_url_empresa"
+            android:layout_width="100dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/cormorant_garamond_medium"
+            android:textAlignment="center"
+            android:textColor="@color/azul_oscuro"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_email_empresa"
+            tools:text="mercadona.com" />
+
+        <ImageView
+            android:id="@+id/iv_item_logo"
+            android:layout_width="71dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.512"
+            app:srcCompat="@drawable/ver_empresas" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="16dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/telefono" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="16dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:srcCompat="@drawable/email" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="16dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            app:srcCompat="@drawable/web" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

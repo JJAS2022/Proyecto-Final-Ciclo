@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_borrar"
+        android:icon="@drawable/borrar"
+        android:title="@string/editar" />
+
+    <item
+        android:id="@+id/menu_editar"
+        android:icon="@drawable/editar"
+        android:title="@string/borrar" />
+
+    <item
+        android:id="@+id/menu_compartir"
+        android:icon="@drawable/compartir"
+        android:title="@string/compartir" />
+</menu>
